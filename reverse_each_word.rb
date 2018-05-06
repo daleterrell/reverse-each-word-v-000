@@ -6,6 +6,7 @@ require 'pry'
 # end
 
 def reverse_each_word(string)
-  string.split.collect {|word| word.reverse.join(" ")}
-  binding.pry
+  sentence_array = string.split(" ")
+  sentence_array.collect {|word| word.reverse.join(" ")}
+
 end
